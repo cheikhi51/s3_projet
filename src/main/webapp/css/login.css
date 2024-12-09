@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/urban-delivery-truck-stockcake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding: 70px 50px 40px 50px;
+    border-radius: 20px;
+    backdrop-filter:blur(10px);
+    color: whitesmoke;
+    border:2px solid #ff6b6b;
+    text-align:center;
+}
+
+h2,
+h4 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+
+.login-form input:hover {
+    border-color: #ff6b6b;
+    filter : drop-shadow(0 0 0.80rem #ff6b6b);
+}
+.btn-submit {
+    background-color: #fb131f;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e85959;
+}
+
+a {
+    margin-top: 10px;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display:block;
+}
+
+a:hover {
+    text-decoration: underline;
+}

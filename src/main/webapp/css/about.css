@@ -1,0 +1,136 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f9fc;
+}
+
+.about-page {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f9fc;
+    color: black;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.features, .commitment, .technology {
+	text-align:center;
+    padding: 40px 20px;
+    background-color: #f7f9fc;
+    margin: 20px 0;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+.features h1, .commitment h1, .technology h1{
+	font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.intro p{
+	font-size: 1.2rem;
+    color: #666;
+}
+.features p, .commitment p, .technology p{
+    font-size: 2rem;
+    color: #666;
+    margin: 10px 0 40px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.features li strong {
+    color: rgb(255, 128, 128);
+}
+
+.cta {
+    text-align: center;
+    padding: 50px;
+    color: white;
+    height:350px;
+}
+
+.cta h1 {
+	font-size:2.5rem;
+    margin-top: 60px;
+}
+
+.cta a {
+    display: inline-block;
+    justify-content:space-around;
+    align-content:center;
+    margin-top: 80px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 57, 100);
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta p{
+	font-size:1.2rem;
+	margin-top:60px;
+}
+
+.cta a:hover {
+    background-color: rgb(200, 0, 57);
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Initially hide the elements */
+  .fade-in-element {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Class to trigger animation when in view */
+  .fade-in {
+    animation: fadeInUp 1s forwards;
+  }
+  @keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .slideleft-element{
+  		opacity:0;
+  		transition:opacity 0.5s ease,transform 0.5s ease;
+  }
+  .slideleft{
+  animation:slideLeft 1s forwards;
+  }
+  
+  

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body {
+    background: linear-gradient(to right, #f0f4f8, #e8eaf6); /* Adds a soft gradient for a modern look */
+    font-family: 'Arial', sans-serif; /* Sets a clean font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logout {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%; /* Ensures responsiveness */
+    max-width: 500px;
+    background-color: #ffffff; /* Clean white background */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for elegance */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds interactivity */
+}
+
+.logout:hover {
+    transform: translateY(-10px); /* Subtle lift effect on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    border-radius: 25px; /* Slightly more rounded corners */
+    background-color: #fb131f; /* Eye-catching red */
+    color: white;
+    font-size: 1rem; /* Increases font size for better readability */
+    padding: 10px 20px; /* Balanced padding */
+    margin-top: 20px; /* Adds space from content above */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adds interactivity */
+}
+
+.button:hover {
+    background-color: #e10e18; /* Slightly darker red for hover state */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.button:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 5px rgba(251, 19, 31, 0.5); /* Adds a focus shadow */
+}

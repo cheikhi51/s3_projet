@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color:#f7f9fc;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .header{
+        margin-top:50px;
+        margin-left:50px;
+        padding-left:15px;
+        }
+        .text {
+		    overflow: hidden;
+		    font-size: 2.5rem;
+		    font-weight: 700;
+		    border-right: 0.15em solid rgb(255, 57, 100);
+		    white-space: nowrap;
+		    animation: typing 4s  steps(20, end) infinite, blink 0.7s step-end infinite;
+		}
+		
+		@keyframes typing {
+		    0% {
+		        width: 0;
+		    }
+		    45% {
+		        width: 11ch;
+		    }
+		    100% {
+		        width: 11ch;
+		    }
+		}
+		
+		@keyframes blink {
+		    from, to {
+		        border-color: transparent;
+		    }
+		    50% {
+		        border-color: rgb(255, 57, 100);
+		    }
+		}
+
+        .header p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        .header .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+
+        .btn-primary {
+            background-color: rgb(255, 57, 100);
+            color: white;
+       }
+
+        .btn-primary:hover {
+            background-color: rgb(200, 0, 57);
+        }
+      .btn-outline-black {
+            color: black;
+            border: 2px solid black;
+            transition:border 0.4s ease,color 0.4s ease,background-color 0.4s ease;
+        }
+
+        .btn-outline-black:hover {
+            background-color: black;
+            color:  rgb(255, 128, 128);
+            border: 3px solid rgb(255, 128, 128);
+        }
+        .view-content{
+        margin-top:30px;
+        display:flex;
+        justify-content: space-between;
+        align-content:center;
+        width:200vh;
+        position:center;
+        }
+        .delivery-img{
+        width:400px;
+        height:400px;
+    
+        }
+        
+        @media (min-width:500px) and (max-width: 700px) {
+        .header{
+        		display:flex;
+		        justify-content:start;
+		        align-content:center;
+        }
+		    .view-content {
+		        flex-direction: column;
+		    }
+		
+		    .delivery-img {
+		        width: 300px;
+		        height: auto;
+		        margin-top: 20px;
+		    }
+} 
+@keyframes smoothSlide {
+    from {
+        opacity:0;
+        transform:translateX(200px);
+    }
+    to {
+        opacity:1;
+        transform:translateX(0);
+    }
+    
+}
+
+.slide-in-element{
+	opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+/* Play slide animation */
+.slide-in {
+	animation: smoothSlide 1s forwards;
+}
+
+@keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+.fade-in-element{
+	opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+	
+}
+/* Play fade animation */
+.fade-in {
+    animation:fade 1s ease-in-out;
+}
+
+::-webkit-scrollbar{
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background: rgb(213, 213, 231);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(255, 57, 100);
+    border-radius: 20px;
+}
